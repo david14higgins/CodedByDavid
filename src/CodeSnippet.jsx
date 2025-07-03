@@ -16,30 +16,30 @@ const CodeSnippet = () => {
         .code-line { white-space: pre; margin: 0; }
       `}</style>
 
-      <p className="code-line"><span className="keyword">import </span> <span className="react">React</span>, &#123; <span className="builtin">useState</span>, <span className="builtin">useEffect</span> &#125; <span className="keyword">from </span> <span className="string">"react"</span>;</p>
-      <p className="code-line"></p>
-      <p className="code-line"><span className="keyword">const </span> <span className="function">App</span> = (&#123; title = <span className="string">"My App"</span> &#125;) =&gt; &#123;</p>
-      <p className="code-line">    <span className="keyword">const</span> [count, setCount] = <span className="builtin">useState</span>(0);</p>
-      <p className="code-line">    <span className="keyword">const</span> [items, setItems] = <span className="builtin">useState</span>([<span className="string">"apple"</span>, <span className="string">"banana"</span>, <span className="string">"cherry"</span>]);</p>
-      <p className="code-line">    <span className="builtin">useEffect</span>(() =&gt; &#123;</p>
-      <p className="code-line">        document.title = <span className="string">`Clicked &#36;&#123;count&#125; times`</span>;</p>
-      <p className="code-line">        <span className="keyword">return</span> () =&gt; <span className="builtin">console</span>.log(<span className="string">"Cleanup on unmount"</span>);</p>
-      <p className="code-line">    &#125;, [count]);</p>
-      <p className="code-line"></p>
-      <p className="code-line">    <span className="keyword">return</span> (</p>
-      <p className="code-line">        &lt;<span className="html">div </span> className=<span className="string">"app-container"</span>&gt;</p>
-      <p className="code-line">            &lt;h1&gt;&#123;title&#125;&lt;/h1&gt;</p>
-      <p className="code-line">            &lt;button onClick=&#123;handleClick&#125;&gt;Clicked &#123;count&#125; times&lt;/button&gt;</p>
-      <p className="code-line">            &lt;ul&gt;</p>
-      <p className="code-line">                &#123;items.map((item, index) =&gt; (</p>
-      <p className="code-line">                    &lt;li key=&#123;index&#125;&gt;&#123;item.toUpperCase()&#125;&lt;/li&gt;</p>
-      <p className="code-line">                ))&#125;</p>
-      <p className="code-line">            &lt;/ul&gt;</p>
-      <p className="code-line">        &lt;/div&gt;</p>
-      <p className="code-line">    );</p>
-      <p className="code-line">&#125;;</p>
-      <p className="code-line"></p>
-      <p className="code-line"><span className="keyword">export</span> <span className="keyword">default</span> App;</p>
+      <p className="code-line"><span className="line-number">1</span><span className="keyword">import </span> <span className="react">React</span>, &#123; <span className="builtin">useState</span>, <span className="builtin">useEffect</span> &#125; <span className="keyword">from </span> <span className="string">"react"</span>;</p>
+      <p className="code-line"><span className="line-number">2</span><br/></p>
+      <p className="code-line"><span className="line-number">3</span><span className="keyword">const </span> <span className="function">App</span> = (&#123; title = <span className="string">"My App"</span> &#125;) =&gt; &#123;</p>
+      <p className="code-line"><span className="line-number">4</span><span className="keyword">const</span> [count, setCount] = <span className="builtin">useState</span>(0);</p>
+      <p className="code-line"><span className="line-number">5</span><span className="keyword">const</span> [items, setItems] = <span className="builtin">useState</span>([<span className="string">"apple"</span>, <span className="string">"banana"</span>, <span className="string">"cherry"</span>]);</p>
+      <p className="code-line"><span className="line-number">6</span><span className="builtin">useEffect</span>(() =&gt; &#123;</p>
+      <p className="code-line"><span className="line-number">7</span>    document.title = <span className="string">`Clicked &#36;&#123;count&#125; times`</span>;</p>
+      <p className="code-line"><span className="line-number">8</span><span className="keyword">    return</span> () =&gt; <span className="builtin">console</span>.log(<span className="string">"Cleanup on unmount"</span>);</p>
+      <p className="code-line"><span className="line-number">9</span>&#125;, [count]);</p>
+      <p className="code-line"><span className="line-number">10</span><br/></p>
+      <p className="code-line"><span className="line-number">11</span>    <span className="keyword">return</span> (</p>
+      <p className="code-line"><span className="line-number">12</span>        &lt;<span className="html">div</span> className=<span className="string">"app-container"</span>&gt;</p>
+      <p className="code-line"><span className="line-number">13</span>            &lt;<span className="html">h1</span>&gt;&#123;title&#125;&lt;/<span className="html">h1</span>&gt;</p>
+      <p className="code-line"><span className="line-number">14</span>            &lt;<span className="html">button</span> onClick=&#123;handleClick&#125;&gt;Clicked &#123;count&#125; times&lt;/<span className="html">button</span>&gt;</p>
+      <p className="code-line"><span className="line-number">15</span>            &lt;<span className="html">ul</span>&gt;</p>
+      <p className="code-line"><span className="line-number">16</span>                &#123;items.map((item, index) =&gt; (</p>
+      <p className="code-line"><span className="line-number">17</span>                    &lt;<span className="html">li</span> key=&#123;index&#125;&gt;&#123;item.toUpperCase()&#125;&lt;/<span className="html">li</span>&gt;</p>
+      <p className="code-line"><span className="line-number">18</span>                ))&#125;</p>
+      <p className="code-line"><span className="line-number">19</span>            &lt;/<span className="html">ul</span>&gt;</p>
+      <p className="code-line"><span className="line-number">20</span>        &lt;/<span className="html">div</span>&gt;</p>
+      <p className="code-line"><span className="line-number">21</span>    );</p>
+      <p className="code-line"><span className="line-number">22</span>&#125;;</p>
+      <p className="code-line"><span className="line-number">23</span></p>
+      <p className="code-line"><span className="line-number">24</span><span className="keyword">export </span> <span className="keyword">default</span> App;</p>
     </div>
   );
 };
