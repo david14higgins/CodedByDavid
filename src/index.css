@@ -1,0 +1,72 @@
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+.page {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  background-image: url("assets/background.jpeg"); /* Replace with your image path */
+  background-size: cover;   /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.terminal {
+  margin: auto;
+  background-color: #D9D9D9;
+  height: 500px;
+  width: 1000px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #dcdcdc;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskbar {
+  background-color: #1C242D;
+  border-radius: 15px 15px 0 0; /* Top-left, Top-right, Bottom-right, Bottom-left */
+  height: 20px;
+  width: 100%;
+}
+
+
+
+.code-container {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+  height: calc(100% - 20px); /* Adjust for taskbar height */
+  
+}
+
+.code-line {
+  display: flex;
+  align-items: baseline;
+}
+
+.line-number {
+  color: #888888;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.code-text {
+  white-space: pre;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/JetBrainsMono/fonts/variable/JetBrainsMono-Italic[wght].ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+}
