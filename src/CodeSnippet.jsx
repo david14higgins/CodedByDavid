@@ -1,5 +1,8 @@
 // src/CodeSnippet.jsx
 import React from "react";
+import Typewriter from "./TypeWriter"
+
+
 
 const CodeSnippet = () => {
   return (
@@ -26,6 +29,12 @@ const CodeSnippet = () => {
       <p className="code-line"><span className="line-number">8</span><span className="keyword">    return</span> () =&gt; <span className="builtin">console</span>.log(<span className="string">"Cleanup on unmount"</span>);</p>
       <p className="code-line"><span className="line-number">9</span>&#125;, [count]);</p>
       <p className="code-line"><span className="line-number">10</span><br/></p>
+      <p className="code-line">
+        <span className="line-number">10</span>
+        <span className="keyword">
+          <Typewriter text="Please fucking work" speed={100} />
+        </span>
+      </p>
       <p className="code-line"><span className="line-number">11</span>    <span className="keyword">return</span> (</p>
       <p className="code-line"><span className="line-number">12</span>        &lt;<span className="html">div</span> className=<span className="string">"app-container"</span>&gt;</p>
       <p className="code-line"><span className="line-number">13</span>            &lt;<span className="html">h1</span>&gt;&#123;title&#125;&lt;/<span className="html">h1</span>&gt;</p>
