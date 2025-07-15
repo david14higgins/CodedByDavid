@@ -1,36 +1,52 @@
-import  { useState, useEffect } from 'react';
+import  { useState, useEffect, useRef } from 'react';
 
-const useTypewriter = (text, speed = 50) => {
+const useTypewriter = (text, speed = 50, onDone, delay=0) => {
   const [displayText, setDisplayText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
+  const doneCalled = useRef(false);
+
 
   useEffect(() => {
     let i = 0;
     setIsTyping(true);
-    const typingInterval = setInterval(() => {
-      if (i < text.length) {
-        setDisplayText(text.substring(0, i + 1));
-        i++;
-      } else {
-        clearInterval(typingInterval);
-        setIsTyping(false);
-      }
-    }, speed);
+    setDisplayText('');           // <-- Reset text
+    doneCalled.current = false;   // <-- Reset done flag
+
+    const startTyping = () => {
+      const typingInterval = setInterval(() => {
+        if (i < text.length) {
+          setDisplayText(text.substring(0, i + 1));
+          i++;
+        } else {
+          clearInterval(typingInterval);
+          setIsTyping(false);
+          if (onDone && !doneCalled.current) {
+            doneCalled.current = true;
+            onDone();
+          }
+        }
+      }, speed);
+    };
+
+    const delayTimeout = setTimeout(startTyping, delay);
 
     return () => {
-      clearInterval(typingInterval);
+      clearInterval(delayTimeout);
     };
-  }, [text, speed]);
+  }, [text, speed, onDone, delay]);
 
   return { displayText, isTyping };
 };
 
-const Typewriter = ({ text, speed }) => {
-  const { displayText, isTyping } = useTypewriter(text, speed);
+const Typewriter = ({ text, speed, onDone, keepBlinking = false, delay = 0}) => {
+  const { displayText, isTyping } = useTypewriter(text, speed, onDone, delay);
+
+  const showCursor = keepBlinking || isTyping;
 
   return (
     <span style={{ position: "relative" }}>
       {displayText}
+      {showCursor && (
       <span
         style={{
           display: "inline-block",
@@ -44,6 +60,7 @@ const Typewriter = ({ text, speed }) => {
       >
         {isTyping ? '\u00A0' : ''}
       </span>
+      )}
       <style>
         {`
           @keyframes blink {

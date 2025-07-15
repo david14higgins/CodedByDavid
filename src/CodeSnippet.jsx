@@ -1,10 +1,15 @@
 // src/CodeSnippet.jsx
-import React from "react";
+import React, { useState, useCallback } from "react";
 import Typewriter from "./TypeWriter"
 
 
 
 const CodeSnippet = () => {
+  const [firstDone, setFirstDone] = useState(false);
+
+  const handleFirstDone = useCallback(() => setFirstDone(true), []);
+
+
   return (
     <div>
       <style>{`
@@ -31,9 +36,20 @@ const CodeSnippet = () => {
       <p className="code-line"><span className="line-number">10</span><br/></p>
       <p className="code-line">
         <span className="line-number">10</span>
-        <span className="keyword">
-          <Typewriter text="Please fucking work" speed={100} />
+        <span className="string">
+          <Typewriter text="// Welcome to CodedByDavid" speed={100} onDone={handleFirstDone} delay={2000}/>
         </span>
+      </p>
+      <p className="code-line">
+        <span className="line-number">11</span>
+        {firstDone && (
+          <Typewriter
+            text="clickHereToContinue();"
+            speed={100}
+            keepBlinking={true}
+            delay={1000}
+          />
+        )}
       </p>
       <p className="code-line"><span className="line-number">11</span>    <span className="keyword">return</span> (</p>
       <p className="code-line"><span className="line-number">12</span>        &lt;<span className="html">div</span> className=<span className="string">"app-container"</span>&gt;</p>
