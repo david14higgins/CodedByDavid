@@ -5,7 +5,6 @@ const useTypewriter = (text, speed = 50, onDone, delay=0) => {
   const [isTyping, setIsTyping] = useState(true);
   const doneCalled = useRef(false);
 
-
   useEffect(() => {
     let i = 0;
     setIsTyping(true);
