@@ -31,11 +31,11 @@ const CodeSnippet = () => {
       <p className="code-line"><span className="line-number">4</span><span className="keyword">  const</span> <span className="pink-bracket">[</span>count, setCount<span className="pink-bracket">]</span> = <span className="builtin">useState</span><span className="pink-bracket">(</span>0<span className="pink-bracket">)</span>;</p>
       <p className="code-line"><span className="line-number">5</span><span className="keyword">  const</span> <span className="pink-bracket">[</span>items, setItems<span className="pink-bracket">]</span> = <span className="builtin">useState</span><span className="pink-bracket">(</span><span className="pink-bracket">[</span><span className="string">"apple"</span>, <span className="string">"banana"</span>, <span className="string">"cherry"</span><span className="pink-bracket">]</span><span className="pink-bracket">)</span>;</p>
       <p className="code-line"><span className="line-number">6</span><span className="builtin">  useEffect</span><span className="pink-bracket">(</span><span className="pink-bracket">(</span><span className="pink-bracket">)</span> =&gt; <span className="pink-bracket">{'{'}</span></p>
-      <p className="code-line"><span className="line-number">8</span><span className="keyword">    return </span> <span className="pink-bracket">(</span><span className="pink-bracket">)</span> =&gt; <span className="builtin">console</span><span className="function">.log</span><span className="pink-bracket">(</span><span className="string">"Cleanup on unmount"</span><span className="pink-bracket">)</span>;</p>
-      <p className="code-line"><span className="line-number">9</span><span className="pink-bracket">  {'}'}</span>, <span className="pink-bracket">[</span>count<span className="pink-bracket">]</span><span className="pink-bracket">)</span>;</p>
-      <p className="code-line"><span className="line-number">10</span><br/></p>
+      <p className="code-line"><span className="line-number">7</span><span className="keyword">    return </span> <span className="pink-bracket">(</span><span className="pink-bracket">)</span> =&gt; <span className="builtin">console</span><span className="function">.log</span><span className="pink-bracket">(</span><span className="string">"Cleanup on unmount"</span><span className="pink-bracket">)</span>;</p>
+      <p className="code-line"><span className="line-number">8</span><span className="pink-bracket">  {'}'}</span>, <span className="pink-bracket">[</span>count<span className="pink-bracket">]</span><span className="pink-bracket">)</span>;</p>
+      <p className="code-line"><span className="line-number">9</span><br/></p>
       <p className="code-line">
-        <span className="line-number">11</span>
+        <span className="line-number">10</span>
         <span>  </span>
         <span className="string">
         <Typewriter 
@@ -46,7 +46,7 @@ const CodeSnippet = () => {
         </span>
       </p>
       <p className="code-line">
-        <span className="line-number">12</span>
+        <span className="line-number">11</span>
         <span>  </span>
         {firstDone && (
           <Typewriter
@@ -57,21 +57,21 @@ const CodeSnippet = () => {
           />
         )}
       </p> 
-      <p className="code-line"><span className="line-number">13</span><br/></p>
-      <p className="code-line"><span className="line-number">14</span><span className="keyword">  return</span> <span className="pink-bracket">(</span></p>
-      <p className="code-line"><span className="line-number">15</span><span className="grey-bracket">{'    <'}</span><span className="html">div</span> <span className="props"> className</span>=<span className="string">"app-container"</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">16</span><span className="grey-bracket">{'      <'}</span><span className="html">h1</span><span className="grey-bracket">{'>'}</span><span className="pink-bracket">{'{'}</span>title<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'</'}</span><span className="html">h1</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">17</span><span className="grey-bracket">{'      <'}</span><span className="html">button</span> <span className="props"> onClick</span>=<span className="pink-bracket">{'{'}</span>handleClick<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'>'}</span>Clicked <span className="pink-bracket">{'{'}</span>count<span className="pink-bracket">{'}'}</span> times<span className="grey-bracket">{'</'}</span><span className="html">button</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">18</span><span className="grey-bracket">{'      <'}</span><span className="html">ul</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">19</span><span className="pink-bracket">{'        {'}</span>items<span className="function">.map</span><span className="pink-bracket">(</span><span className="pink-bracket">(</span>item, index<span className="pink-bracket">)</span> =&gt; <span className="pink-bracket">(</span></p>
-      <p className="code-line"><span className="line-number">20</span><span className="grey-bracket">{'         <'}</span><span className="html">li</span> <span className="props"> key</span>=<span className="pink-bracket">{'{'}</span>index<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'>'}</span><span className="pink-bracket">{'{'}</span>item<span className="function">.toUpperCase</span><span className="pink-bracket">(</span><span className="pink-bracket">)</span><span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'</'}</span><span className="html">li</span>&gt;</p>
-      <p className="code-line"><span className="line-number">21</span><span className="pink-bracket">        )</span><span className="pink-bracket">)</span><span className="pink-bracket">{'}'}</span></p>
-      <p className="code-line"><span className="line-number">22</span><span className="grey-bracket">{'      </'}</span><span className="html">ul</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">23</span><span className="grey-bracket">{'    </'}</span><span className="html">div</span><span className="grey-bracket">{'>'}</span></p>
-      <p className="code-line"><span className="line-number">24</span><span className="pink-bracket">  )</span>;</p>
-      <p className="code-line"><span className="line-number">25</span><span className="pink-bracket">{'}'}</span>;</p>
-      <p className="code-line"><span className="line-number">26</span></p>
-      <p className="code-line"><span className="line-number">27</span><span className="keyword">export </span> <span className="keyword">default</span> App;</p>
+      <p className="code-line"><span className="line-number">12</span><br/></p>
+      <p className="code-line"><span className="line-number">13</span><span className="keyword">  return</span> <span className="pink-bracket">(</span></p>
+      <p className="code-line"><span className="line-number">14</span><span className="grey-bracket">{'    <'}</span><span className="html">div</span> <span className="props"> className</span>=<span className="string">"app-container"</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">15</span><span className="grey-bracket">{'      <'}</span><span className="html">h1</span><span className="grey-bracket">{'>'}</span><span className="pink-bracket">{'{'}</span>title<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'</'}</span><span className="html">h1</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">16</span><span className="grey-bracket">{'      <'}</span><span className="html">button</span> <span className="props"> onClick</span>=<span className="pink-bracket">{'{'}</span>handleClick<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'>'}</span>Clicked <span className="pink-bracket">{'{'}</span>count<span className="pink-bracket">{'}'}</span> times<span className="grey-bracket">{'</'}</span><span className="html">button</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">17</span><span className="grey-bracket">{'      <'}</span><span className="html">ul</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">18</span><span className="pink-bracket">{'        {'}</span>items<span className="function">.map</span><span className="pink-bracket">(</span><span className="pink-bracket">(</span>item, index<span className="pink-bracket">)</span> =&gt; <span className="pink-bracket">(</span></p>
+      <p className="code-line"><span className="line-number">19</span><span className="grey-bracket">{'         <'}</span><span className="html">li</span> <span className="props"> key</span>=<span className="pink-bracket">{'{'}</span>index<span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'>'}</span><span className="pink-bracket">{'{'}</span>item<span className="function">.toUpperCase</span><span className="pink-bracket">(</span><span className="pink-bracket">)</span><span className="pink-bracket">{'}'}</span><span className="grey-bracket">{'</'}</span><span className="html">li</span>&gt;</p>
+      <p className="code-line"><span className="line-number">20</span><span className="pink-bracket">        )</span><span className="pink-bracket">)</span><span className="pink-bracket">{'}'}</span></p>
+      <p className="code-line"><span className="line-number">21</span><span className="grey-bracket">{'      </'}</span><span className="html">ul</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">22</span><span className="grey-bracket">{'    </'}</span><span className="html">div</span><span className="grey-bracket">{'>'}</span></p>
+      <p className="code-line"><span className="line-number">23</span><span className="pink-bracket">  )</span>;</p>
+      <p className="code-line"><span className="line-number">24</span><span className="pink-bracket">{'}'}</span>;</p>
+      <p className="code-line"><span className="line-number">25</span></p>
+      <p className="code-line"><span className="line-number">26</span><span className="keyword">export </span> <span className="keyword">default</span> App;</p>
     </div>
   );
 };
