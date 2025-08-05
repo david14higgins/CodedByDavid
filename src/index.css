@@ -25,9 +25,11 @@
   font-size: 14px;
   color: #dcdcdc;
   background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+  backdrop-filter: blur(4px); /* Optional: adds a blur effect to the background */
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
 }
 
 .taskbar {
