@@ -5,7 +5,6 @@
 
 }
 
-
 .home {
   width: 100vw;
   height: 100vh;
@@ -26,7 +25,7 @@
   border-radius: 15px;
   font-size: 14px;
   color: #dcdcdc;
-  background-color: rgba(0, 0, 0, 0.3); /* Transparent black */
+  background-color: rgba(0, 0, 0, 0.15); /* Transparent black */
   backdrop-filter: blur(4px); /* Optional: adds a blur effect to the background */
   display: flex;
   flex-direction: column;
@@ -109,29 +108,66 @@
 
 .about {
   width:100vw; 
-  height: 100vh;;
+  height: 100vh;
+  background-color: #191C27;
+  display: flex;
+  justify-content: center;
 }
 
 .about-content {
   display: flex; 
+  flex-direction: column;
   width: 80%;
+  margin-top: 10%;
   height: 80%;
 }
 
-.left-content,
+.about-row {
+  display: flex; 
+  flex: 1 1 auto; 
+  width: 100%;
+  height: 60%;
+}
+
+.left-content {
+  flex: 0 0 60%;
+  max-width: 60%;
+  
+}
+
 .right-content {
-  flex: 1;  
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.lower-content {
+  width: 100%; 
+}
+
+.left-content h1 {
+  font-family: 'Outfit', sans-serif;
+  color: #E2E8F0;
+}
+
+.left-content h2 {
+  font-family: 'karla', sans-serif;
+  color: #E2E8F0;
+}
+
+.left-content p {
+  font-family: 'karla', sans-serif;
+  color: #E2E8F0; 
+  margin-top: 20px;;
 }
 
 .right-content {
   display: flex; 
-  align-items: center; 
   justify-content: center;;
 }
 
 .photo-container {
-  width: 100%; 
-  height: 100%; 
+  width: 80%; 
+  height: 80%; 
   display: flex; 
   align-items: center; 
   justify-content: center;
@@ -143,9 +179,31 @@
   border-radius: 12px;
 }
 
+.lower-content p {
+  color: royalblue;
+}
+
+
+
 @font-face {
   font-family: 'JetBrains Mono';
   src: url('./assets/fonts/JetBrainsMono/fonts/variable/JetBrainsMono-Italic[wght].ttf') format('truetype');
   font-weight: 100 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('./assets/fonts/SFMono/SFMono-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("./assets/fonts/Karla/Karla-VariableFont_wght.ttf");
+} 
