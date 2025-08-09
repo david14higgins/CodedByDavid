@@ -6,13 +6,13 @@ function Links() {
     return (
         <>
             <div className="icon-menu">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="https://github.com/david14higgins" target="_blank" rel="noopener noreferrer" className="icon-link">
                 <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="https://www.linkedin.com/in/david14higgins/" target="_blank" rel="noopener noreferrer" className="icon-link">
                 <FaLinkedin />
             </a>
-            <a href="/your-cv.pdf" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="icon-link">
                 <HiOutlineDocumentText />
             </a>
             </div>
