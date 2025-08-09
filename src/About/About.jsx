@@ -1,4 +1,6 @@
 import './About.css';
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 
 function About() {
   return (
@@ -16,6 +18,10 @@ function About() {
             <div className="right-content">
               <div className="photo-container">
                 <img src="src/assets/images/graduation.jpg" alt="David Higgins" />
+                <div className="photo-overlay">
+                  <FaMapMarkerAlt className="location-icon" />
+                  <span>McEwan Hall, Graduation</span>
+                  </div>
               </div>
             </div>
           </div>
