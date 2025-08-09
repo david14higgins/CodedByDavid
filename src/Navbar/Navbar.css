@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: #191C27; /* Match your background */
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0 40px;
+  margin-left: auto; /* This pins the menu to the right */
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  color: #E2E8F0;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  background: #23293a;
+  color: #fff;
+}
