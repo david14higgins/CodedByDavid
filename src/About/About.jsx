@@ -20,7 +20,38 @@ function About() {
             </div>
           </div>
           <div className="lower-content">
-            
+            <div className="experience-container">
+                <div className="experience-item">
+                    <div className="experience-left">
+                        <img className="company-logo" src="src/assets/images/RedgateLogo.png" alt="Redgate Logo" />
+                        <h2>Redgate</h2>
+                    </div>
+                    <div className="experience-right">
+                        <span className="experience-date">Aug 2025 - Present</span>
+                        <span className="experience-position">Software Engineer</span>
+                    </div>
+                </div>
+                <div className="experience-item">
+                    <div className="experience-left">
+                        <img className="company-logo" src="src/assets/images/LanthanideasLogo.png" alt="Redgate Logo" />
+                        <h2>Lanthanideas</h2>
+                    </div>
+                    <div className="experience-right">
+                        <span className="experience-date">2023 - 2024</span>
+                        <span className="experience-position">Web Developer</span>
+                    </div>
+                </div>
+                <div className="experience-item">
+                    <div className="experience-left">
+                        <img className="company-logo" src="src/assets/images/RedgateLogo.png" alt="Redgate Logo" />
+                        <h2>Redgate</h2>
+                    </div>
+                    <div className="experience-right">
+                        <span className="experience-date">July - September 2024</span>
+                        <span className="experience-position">Software Engineer Intern</span>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
