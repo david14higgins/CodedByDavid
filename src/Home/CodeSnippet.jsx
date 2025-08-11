@@ -1,6 +1,8 @@
 // src/CodeSnippet.jsx
 import React, { useState, useCallback } from "react";
 import Typewriter from "./TypeWriter"
+import { Element, Link } from "react-scroll";
+
 
 const CodeSnippet = () => {
   const [firstDone, setFirstDone] = useState(false);
@@ -49,12 +51,14 @@ const CodeSnippet = () => {
         <span className="line-number">11</span>
         <span>  </span>
         {firstDone && (
-          <Typewriter
-            text="clickHereToContinue();"
-            speed={100}
-            keepBlinking={true}
-            delay={1000}
-          />
+          <Link to="about-page" smooth={true} duration={1000} className="clickHereLink">
+            <Typewriter
+              text="clickHereToContinue();"
+              speed={100}
+              keepBlinking={true}
+              delay={1000}
+            />
+          </Link>
         )}
       </p> 
       <p className="code-line"><span className="line-number">12</span><br/></p>

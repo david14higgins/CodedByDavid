@@ -1,10 +1,12 @@
 import './About.css';
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { Element } from "react-scroll";
+
 
 
 function About() {
   return (
-    <>
+    < Element name="about-page">
       <div className="about">
         <div className="about-content">
           <div className="about-row">
@@ -61,7 +63,7 @@ function About() {
           </div>
         </div>
       </div>
-    </>
+    </ Element>
   )
 }
 

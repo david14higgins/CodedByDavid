@@ -43,7 +43,7 @@ const Typewriter = ({ text, speed, onDone, keepBlinking = false, delay = 0}) => 
   const showCursor = keepBlinking || isTyping;
 
   return (
-    <span style={{ position: "relative" }}>
+    <span style={{ position: "relative" }} className="typewriter-text">
       {displayText}
       {showCursor && (
       <span

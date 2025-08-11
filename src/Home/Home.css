@@ -98,3 +98,8 @@
 .code-text {
   white-space: pre;
 }
+
+.clickHereLink:hover {
+  cursor: pointer;
+  color: #00c6cd;
+}
