@@ -55,6 +55,7 @@ const CodeSnippet = () => {
             <Typewriter
               text="clickHereToContinue();"
               speed={100}
+              onDone={handleFirstDone}
               keepBlinking={true}
               delay={1000}
             />
