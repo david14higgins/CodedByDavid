@@ -23,7 +23,7 @@
 
 @media (max-width: 767.98px) { 
   .icon-menu {
-    
+    display: none;;
   }
 }
 
