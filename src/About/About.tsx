@@ -13,9 +13,9 @@ function About() {
             <div className="left-content">
               <h1>David Higgins</h1>
               <h2>Junior Software Engineer</h2>
-              <p>Message for Heidi with a strong foundation in computer science and a focus on building efficient, scalable, and user-friendly applications. I enjoy solving complex problems through clean code and thoughtful design, whether working on the frontend, backend, or full-stack systems. With experience across a range of technologies and languages, I continuously seek to...</p>
-              <p>I’m a passionate software developer with a strong foundation in computer science and a focus on building efficient, scalable, and user-friendly applications. I enjoy solving complex problems through clean code and thoughtful design, whether working on the frontend, backend, or full-stack systems. With experience across a range of technologies and languages, I continuously seek to...</p>
-              <p>I’m a passionate software developer with a strong foundation in computer science and a focus on building efficient, scalable, and user-friendly applications. I enjoy solving complex problems through clean code and thoughtful design, whether working on the frontend, backend, or full-stack systems. With experience across a range of technologies and languages, I continuously seek to...</p>
+              <p>I'm a software engineer with a strong academic foundation and a passion for building things end-to-end. Studying Computer Science at the University of Edinburgh has shaped how I approach problems: with clarity, structure, and a focus on creating relaible, well-designed systems. I enjoy turning ideas into working solutions that are both intuitive and technically sound.</p>
+              <p>Much of my experience comes from hands-on projects across web development, cloud archicture, and full-stack engineering. This portfolio covers some of the projects I've undertaken outside of both my studies and professional work. These projects have strengthened my understanding of core software principles while giving me confidence in shipping real, user-facing applications.</p>
+              <p>I am currently working at Redgate Software in Cambridge where I'm learning more about the world of Database DevOps. </p>
             </div>
             <div className="right-content">
               <div className="photo-container">
