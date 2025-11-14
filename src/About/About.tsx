@@ -1,8 +1,9 @@
 import './About.css';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { Element } from "react-scroll";
-
-
+import graduationImg from '../assets/images/graduation.jpg'
+import redgateLogo from '../assets/images/RedgateLogo.png';
+import lanthanideasLogo from '../assets/images/LanthanideasLogo.png';
 
 function About() {
   return (
@@ -19,7 +20,7 @@ function About() {
             </div>
             <div className="right-content">
               <div className="photo-container">
-                <img src="src/assets/images/graduation.jpg" alt="David Higgins" />
+                <img src={graduationImg} alt="David Higgins" />
                 <div className="photo-overlay">
                   <FaMapMarkerAlt className="location-icon" />
                   <span>McEwan Hall, Graduation</span>
@@ -31,7 +32,7 @@ function About() {
             <div className="experience-container">
                 <div className="experience-item">
                     <div className="experience-left">
-                        <img className="company-logo" src="src/assets/images/RedgateLogo.png" alt="Redgate Logo" />
+                        <img className="company-logo" src={redgateLogo} alt="Redgate Logo" />
                         <h2>Redgate</h2>
                     </div>
                     <div className="experience-right">
@@ -41,7 +42,7 @@ function About() {
                 </div>
                 <div className="experience-item">
                     <div className="experience-left">
-                        <img className="company-logo" src="src/assets/images/LanthanideasLogo.png" alt="Redgate Logo" />
+                        <img className="company-logo" src={lanthanideasLogo} alt="Lanthanideas Logo" />
                         <h2>Lanthanideas</h2>
                     </div>
                     <div className="experience-right">
@@ -51,7 +52,7 @@ function About() {
                 </div>
                 <div className="experience-item">
                     <div className="experience-left">
-                        <img className="company-logo" src="src/assets/images/RedgateLogo.png" alt="Redgate Logo" />
+                        <img className="company-logo" src={redgateLogo} alt="Redgate Logo" />
                         <h2>Redgate</h2>
                     </div>
                     <div className="experience-right">
