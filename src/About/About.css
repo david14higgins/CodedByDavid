@@ -44,6 +44,7 @@
 .left-content p {
   font-family: 'karla', sans-serif;
   color: #E2E8F0; 
+  font-size: 20px;
   margin-top: 20px;;
 }
 
@@ -168,4 +169,109 @@
   color: #E2E8F0;
   font-size: 1rem;
   font-weight: bold;
+}
+
+/* ----- Responsive Settings ------ */
+
+@media (max-width: 767.98px) {
+  .about {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-content {
+    width: 90%;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  .about-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .left-content {
+    text-align: left;
+    max-width: 100%;
+  
+  }
+
+  .left-content h1 {
+
+  }
+
+  .left-content p {
+    width: 100%;
+  }
+
+
+  .right-content {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .lower-content {
+  }
+
+  .photo-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .experience-container {
+    width: 100%;
+  }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-content {
+    width: 90%;
+  }
+
+  .left-content {
+    flex: 0 0 55%;
+    max-width: 55%;
+  }
+
+  .right-content {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+  .experience-container {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-content {
+    width: 85%;
+  }
+
+  .experience-container {
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .about-content {
+    width: 80%;
+  }
+}
+
+/* Beyond */
+@media (min-width: 1400px) { 
+  .about-content {
+    width: 75%;
+  }
 }
