@@ -5,9 +5,10 @@ import graduationImg from '../assets/images/graduation.jpg'
 import redgateLogo from '../assets/images/RedgateLogo.png';
 import lanthanideasLogo from '../assets/images/LanthanideasLogo.png';
 
+
 function About() {
   return (
-    < Element name="about-page">
+    <Element name="about-page">
       <div className="about">
         <div className="about-content">
           <div className="about-row">
@@ -64,7 +65,7 @@ function About() {
           </div>
         </div>
       </div>
-    </ Element>
+    </Element>
   )
 }
 
